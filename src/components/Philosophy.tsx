@@ -8,9 +8,9 @@ export default function Philosophy() {
       <div className="px-8 mt-3 mb-4">
         <h4 className="text-3xl font-black text-center mb-4">Our Philosophy</h4>
         <p className="text-center mb-6">
-          Shawn Property Group takes pride in its distinctive approach. We foster close collaboration with our    clients, leaving no room for any question, concern, or desire to go unnoticed or unaddressed.
+          Shawn Property Group takes pride in its distinctive approach. We foster close collaboration with our clients, leaving no room for any question, concern, or desire to go unnoticed or unaddressed.
           <br /><br />
-          Our dedicated team of professionals understands the significance of effective communication and active engagement. We actively listen to your needs, preferences, and aspirations, striving to incorporate them into every step of the process. Whether it's finding the perfect property, navigating through legal procedures, or addressing any post-purchase queries, we are here to provide unwavering support and guidance.
+          Our dedicated team of professionals understands the significance of effective communication and active engagement. We actively listen to your needs, preferences, and aspirations, striving to incorporate them into every step of the process. Whether it&apos;s finding the perfect property, navigating through legal procedures, or addressing any post-purchase queries, we are here to provide unwavering support and guidance.
           <br /><br />
           By choosing Shawn Property Group, you embark on a journey where your vision becomes our mission. We go above and beyond to transform your dreams into a tangible reality. With our distinctive approach and unwavering dedication, we are committed to delivering exceptional results and creating a lasting relationship based on trust and satisfaction.
         </p>

@@ -77,7 +77,7 @@ export default function Careers(){
 
       <div className="px-8 text-center">
         <h3 className="text-center text-3xl font-bold mt-4">VACANCIES</h3>
-        <p className="mb-3">We're hiring for the following</p>
+        <p className="mb-3">We&apos;re hiring for the following</p>
 
         <ul className="flex gap-x-9 justify-center list-disc mb-6">
           {roles.map((role:string, idx:number) => (
@@ -91,7 +91,7 @@ export default function Careers(){
       <div className="px-8 mt-6">        
         {
           isSubmitted ? (
-            <div className="flex justify-center font-bold mb-4 text-3xl">You've applied Successfully</div>
+            <div className="flex justify-center font-bold mb-4 text-3xl">You&apos;ve applied Successfully</div>
           ) : (
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="w-full mb-3">
