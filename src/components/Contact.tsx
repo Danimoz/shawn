@@ -9,6 +9,7 @@ type Inputs = {
   first_name: string
   last_name: string
   phone: string
+  message: string
 }
 
 export default function ContactForm() {
@@ -106,6 +107,20 @@ export default function ContactForm() {
               <div>{errors.phone?.message}</div>
             )}
           </div>
+        </div>
+
+        <div className="w-full">
+          <label htmlFor="message">Message</label>
+          <textarea 
+            id="message" 
+            disabled={isSubmitting} 
+            className="p-3 w-full rounded-lg border-2 mb-3" 
+            {...register('message')} 
+            placeholder="Message"
+          />
+          {errors.phone?.message && (
+              <div>{errors.message?.message}</div>
+            )}
         </div>
 
         <div className="flex justify-center">

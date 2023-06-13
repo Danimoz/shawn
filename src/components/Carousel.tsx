@@ -55,5 +55,3 @@ const Carousel = () => {
 }
 
 export default Carousel;
-
-export const revalidate = 40;

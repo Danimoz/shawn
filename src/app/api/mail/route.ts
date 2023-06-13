@@ -21,7 +21,8 @@ export async function POST(req: Request) {
         First Name: ${data.data.first_name}\n
         Last Name: ${data.data.last_name}\n
         Email: ${data.data.email}\n
-        Phone: ${data.data.phone}
+        Phone: ${data.data.phone}\n
+        Message: ${data.data.message}
       `
     })
     return new Response(JSON.stringify({message: 'Successful'}), { status: 200 })
