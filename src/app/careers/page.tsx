@@ -79,7 +79,7 @@ export default function Careers(){
         <h3 className="text-center text-3xl font-bold mt-4">VACANCIES</h3>
         <p className="mb-3">We&apos;re hiring for the following</p>
 
-        <ul className="flex gap-x-9 justify-center list-disc mb-6">
+        <ul className="md:flex text-center gap-x-9 justify-center md:list-disc mb-6">
           {roles.map((role:string, idx:number) => (
             <li key={idx}>{role}</li>
           ))}
