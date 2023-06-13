@@ -41,7 +41,7 @@ export default function ContactForm() {
 
   return (
     <div id="contact" className="mt-4 px-8 mb-4">
-      <h3 className="capitalize flex justify-center font-bold text-2xl mb-4">GET IN TOUCH WITH US</h3>
+      <h3 className="capitalize flex justify-center font-bold text-2xl text-sky-400 mb-4">GET IN TOUCH WITH US</h3>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="md:flex md:gap-x-4">

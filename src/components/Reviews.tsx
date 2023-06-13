@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Reviews() {
   return (
     <div className="mt-9 mb-9">
-      <h3 className="text-center font-black text-3xl">Customer Reviews</h3>
+      <h3 className="text-center font-black text-3xl text-sky-400">Customer Reviews</h3>
 
       <div className="mt-6 flex items-center bg-[#f6f6f6]">
         <div className="w-full px-6 relative h-[50vh] hidden md:flex">
