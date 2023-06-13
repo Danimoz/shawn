@@ -8,7 +8,8 @@ const images = [
   'prop.jpg',
   'swim.jpg',
   'ale.jpg',
-  'best.jpg'
+  'best.jpg',
+  'home.jpg'
 ]
 
 const Carousel = () => {
@@ -29,22 +30,27 @@ const Carousel = () => {
   }, [])
 
   return (
-    <div className="flex justify-between items-center relative">
-      <div className="absolute left-8 top-[50%] z-10">
-        <button className='rounded-xl bg-gray-200 px-2 py-2' onClick={goToPreviousImage}><FaArrowLeft size={28} /></button>
+    <>
+      <div className="flex justify-between items-center relative">
+        <div className="absolute left-8 top-[50%] z-10">
+          <button className='rounded-xl bg-gray-200 px-2 py-2' onClick={goToPreviousImage}><FaArrowLeft size={28} /></button>
+        </div>
+        <div className="w-full h-[50vh] relative">
+          <Image 
+            src={`/${images[currentImage]}`}
+            alt={`Carousel Image ${currentImage}`} 
+            fill={true}
+            className="heroImg transition duration-500 ease-in-out"
+          />
+        </div>
+        <div className="absolute right-8 top-[50%]">
+          <button className='rounded-xl bg-gray-200 px-2 py-2' onClick={goToNextImage}><FaArrowRight size={28} /></button>
+        </div>
       </div>
-      <div className="w-full h-[50vh] relative">
-        <Image 
-          src={`/${images[currentImage]}`}
-          alt={`Carousel Image ${currentImage}`} 
-          fill={true}
-          className="heroImg transition duration-500 ease-in-out"
-        />
+      <div className="mb-4">
+        <p className="text-3xl text-center my-8">Let's sell you a <span className="font-bold text-4xl">HOME</span> not a <span className="font-bold text-4xl">HOUSE</span></p>
       </div>
-      <div className="absolute right-8 top-[50%]">
-        <button className='rounded-xl bg-gray-200 px-2 py-2' onClick={goToNextImage}><FaArrowRight size={28} /></button>
-      </div>
-    </div>
+    </>
   )
 }
 

@@ -1,4 +1,3 @@
-import { signIn, signOut } from 'next-auth/react'
 import Carousel from '@/components/Carousel';
 import ContactForm from '@/components/Contact';
 import Philosophy from '@/components/Philosophy';
