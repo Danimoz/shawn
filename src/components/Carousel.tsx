@@ -48,7 +48,7 @@ const Carousel = () => {
         </div>
       </div>
       <div className="mb-4">
-        <p className="text-3xl text-center my-8">Let's sell you a <span className="font-bold text-4xl">HOME</span> not a <span className="font-bold text-4xl">HOUSE</span></p>
+        <p className="text-3xl text-center my-8">Let&apos;s sell you a <span className="font-bold text-4xl">HOME</span> not a <span className="font-bold text-4xl">HOUSE</span></p>
       </div>
     </>
   )
