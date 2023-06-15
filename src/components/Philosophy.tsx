@@ -1,11 +1,24 @@
 import { FaLightbulb, FaPencilRuler } from "react-icons/fa";
 import { TbTargetArrow } from "react-icons/tb";
-
+import Image from "next/image";
 
 export default function Philosophy() {
   return (
     <div className="mt-9">
-      <div className="px-8 mt-3 mb-4">
+      <div className="mt-6 sm:block md:flex items-center bg-[#f6f6f6]">
+        <div className="w-full px-6 relative h-[50vh] md:flex">
+          <Image
+            src='/roomcom.jpg' 
+            fill={true}
+            alt='Review Img'
+            className="heroImg"
+          />
+        </div>
+        <div className="w-full mb-6">
+          <h2 className="px-8 py-4 text-3xl text-center my-6 font-bold">We are home to <br />some of the most recognized names<br /> in real estate.</h2>
+        </div>
+      </div>
+      <div className="px-8 mt-6 mb-4">
         <h4 className="text-3xl font-black text-center mb-4 text-sky-400">Our Philosophy</h4>
         <p className="text-center mb-6">
           Shawn Property Group takes pride in its distinctive approach. We foster close collaboration with our clients, leaving no room for any question, concern, or desire to go unnoticed or unaddressed.
@@ -15,7 +28,7 @@ export default function Philosophy() {
           By choosing Shawn Property Group, you embark on a journey where your vision becomes our mission. We go above and beyond to transform your dreams into a tangible reality. With our distinctive approach and unwavering dedication, we are committed to delivering exceptional results and creating a lasting relationship based on trust and satisfaction.
         </p>
       </div>
-      <div className="md:flex gap-x-4 px-8 mt-4">
+      <div className="md:flex gap-x-4 px-8 mt-8">
         <div className="mb-3">
           <div className="flex justify-center text-sky-400 animate-spin"><FaLightbulb size={42} /></div>
           <h4 className="text-center font-bold text-xl mb-1">Idea</h4>

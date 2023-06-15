@@ -5,8 +5,8 @@ export default function Reviews() {
     <div className="mt-9 mb-9">
       <h3 className="text-center font-black text-3xl text-sky-400">Customer Reviews</h3>
 
-      <div className="mt-6 flex items-center bg-[#f6f6f6]">
-        <div className="w-full px-6 relative h-[50vh] hidden md:flex">
+      <div className="mt-6 sm:block md:flex items-center bg-[#f6f6f6]">
+        <div className="w-full px-6 relative h-[50vh] flex">
           <Image
             src='/review.jpg' 
             fill={true}
