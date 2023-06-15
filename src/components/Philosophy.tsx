@@ -14,7 +14,7 @@ export default function Philosophy() {
             className="heroImg"
           />
         </div>
-        <div className="w-full mb-6">
+        <div className="w-full mb-6 pb-4">
           <h2 className="px-8 py-4 text-3xl text-center my-6 font-bold">We are home to <br />some of the most recognized names<br /> in real estate.</h2>
         </div>
       </div>
