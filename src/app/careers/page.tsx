@@ -65,7 +65,7 @@ export default function Careers(){
 
   return (
     <div>
-      <h3 className="text-black text-3xl mt-6 px-8 mb-3 text-center">We are Hiring!!</h3>
+      <h3 className="text-black text-3xl mt-6 px-8 mb-3 text-sky-400 font-bold text-center">We are Hiring!!</h3>
       <div className="relative h-[75vh]">
         <Image 
           fill={true}
@@ -76,7 +76,7 @@ export default function Careers(){
       </div>
 
       <div className="px-8 text-center">
-        <h3 className="text-center text-3xl font-bold mt-4">VACANCIES</h3>
+        <h3 className="text-center text-3xl font-bold mt-4 text-sky-400">VACANCIES</h3>
         <p className="mb-3">We&apos;re hiring for the following</p>
 
         <ul className="md:flex text-center gap-x-9 justify-center md:list-disc mb-6">

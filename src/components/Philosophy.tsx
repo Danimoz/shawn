@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Philosophy() {
   return (
-    <div className="mt-9">
-      <div className="mt-6 sm:block md:flex items-center bg-[#f6f6f6]">
+    <div>
+      <div className="sm:block md:flex items-center bg-[#f6f6f6]">
         <div className="w-full px-6 relative h-[50vh] md:flex">
           <Image
             src='/roomcom.jpg' 
