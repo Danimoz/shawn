@@ -20,19 +20,19 @@ export default function Reviews() {
           <div className="md:flex gap-x-6 py-6 justify-center items-center text-white">
             <div>
               <h2><span className="font-bold text-3xl flex justify-center mb-0">350</span></h2>
-              <h2 className="text-xl">houses held per month</h2>
+              <h2 className="text-xl flex justify-center">houses held per month</h2>
             </div>
             <div>
               <h2 className="font-bold text-3xl flex justify-center mb-0">35</h2>
-              <h2 className="text-xl">experts working</h2>
+              <h2 className="text-xl flex justify-center">experts working</h2>
             </div>
             <div>
               <h2 className="font-bold text-3xl flex justify-center mb-0">6</h2>
-              <h2 className="text-xl">awards won</h2>
+              <h2 className="text-xl flex justify-center">awards won</h2>
             </div>
             <div>
               <h2 className="font-bold text-3xl flex justify-center mb-0">100%</h2>
-              <h2 className="text-xl">satisfied customers</h2>
+              <h2 className="text-xl flex justify-center">satisfied customers</h2>
             </div>
           </div>
         </div>        
