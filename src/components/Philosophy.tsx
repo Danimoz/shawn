@@ -48,6 +48,29 @@ export default function Philosophy() {
         </div>
       </div>
 
+      <h3 className="text-center mt-8 font-black text-3xl mx-8 text-sky-400">Why You&apos;ll Love Us</h3>
+      <div className="mt-6 sm:block md:flex items-center bg-[#f6f6f6]">
+        <div className="w-full px-6 relative h-[50vh] md:flex">
+          <Image
+            src='/ale.jpg' 
+            fill={true}
+            alt='Review Img'
+            className="heroImg"
+          />
+        </div>
+        <div className="w-full mb-6 pb-4">
+          <h2 className="px-8 py-2 text-xl text-center my-3">We support our affiliates with a host of operational, marketing, recruiting, educational and business development resources.</h2>
+          <h3 className="px-8 text-xl mx-6 mb-3">We are:</h3>
+          <ul className="px-8 mx-8 text-xl list-disc">
+            <li className="mb-2 font-bold">Elegant</li>
+            <li className="mb-2 font-bold">Ethical</li>
+            <li className="mb-2 font-bold">Sustainable</li>
+            <li className="mb-2 font-bold">Perfection</li>
+            <li className="mb-2 font-bold">Seasonal</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   );
 }

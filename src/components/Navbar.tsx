@@ -7,7 +7,6 @@ import logo from "../../public/logo.jpg";
 
 const sections = [
   {sectionLink: '/', name: 'Home'},
-  {sectionLink: '#contact', name: 'Contact'},
   {sectionLink: 'careers', name: 'Careers'}
 ]
 
