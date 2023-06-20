@@ -8,7 +8,9 @@ const openSans = Open_Sans({ subsets: ['latin'] })
 export const metadata = {
   title: 'Shawn Property',
   description: 'Official Website of Shawn Property Group',
-  googleSiteVerification: '03WkixCFpHVyggE-nOI4QpUa1lD4x8E04cwgKTskv0k' 
+  verification: {
+    google: '03WkixCFpHVyggE-nOI4QpUa1lD4x8E04cwgKTskv0k'
+  }
 }
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
