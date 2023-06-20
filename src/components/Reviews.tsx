@@ -4,7 +4,7 @@ import { FaStarHalf, FaStar } from "react-icons/fa";
 export default function Reviews() {
   return (
     <div className="mb-9">
-      <div className="relative h-[50vh] w-full">
+      <div className="relative sm:h-[60vh] md:h-[50vh] w-full">
         <div className="-z-[1]">
           <Image 
             priority

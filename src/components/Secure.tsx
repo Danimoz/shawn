@@ -8,7 +8,7 @@ const Secure = () => {
           <h1 className="px-8 py-4 mb-6 font-black text-5xl">ALL YOUR ASSETS ARE SECURED</h1>
           <p className="px-8 py-4 mb-6">OUR GOAL IS TO PROVIDE YOU WITH THE BEST POSSIBLE REAL ESTATE EXPERIENCE AND RESULTS THAT MATCH</p>
           <Link href='#contact' className="px-8">
-            <button className="rounded-lg bg-transparent p-4 border-2 text-lg border-1 ">GET IN TOUCH</button>
+            <button className="rounded-lg bg-transparent p-4 mb-2 border-2 text-lg border-1 ">GET IN TOUCH</button>
           </Link>
         </div>
 
