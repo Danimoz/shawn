@@ -33,13 +33,3 @@ export async function POST(req: Request) {
     return new Response(JSON.stringify({ message: 'Could not add this. Try again' }), { status:400 }) 
   }
 }
-
-
-export async function GET(req: Request){
-  try {
-    const property = await Property.find({})
-    return new Response(JSON.stringify({ data: property }), { status:200 }) 
-  } catch (err) {
-    return new Response(JSON.stringify({ message: 'Could not add this. Try again' }), { status:400 }) 
-  }
-}

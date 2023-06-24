@@ -27,4 +27,4 @@ const propertySchema = new Schema<IProperty>({
 });
 
 const Property = models.Property || model<IProperty>('Property', propertySchema)
-export default Property
+export default Property;

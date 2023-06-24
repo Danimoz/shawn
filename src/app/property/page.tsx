@@ -1,17 +1,20 @@
-import { IProperty } from "@/models/Property";
+import Property, { IProperty } from "@/models/Property";
 import getImageUrl from "@/utils/lib";
+import connectDB from "@/utils/mongoose";
 import Image from "next/image";
 import Link from "next/link";
 
 async function getProperty() {
-  const url = process.env.NEXTAUTH_URL!
-  const res = await fetch(`${url}/api/property`)
-  if (!res.ok) throw new Error('Failed to fetch data')
-  return res.json()
+  await connectDB();
+  try{
+    return await Property.find({})
+  } catch(err) {
+    throw new Error('Failed to fetch data')
+  }
 }
 
-export default async function Property() {
-  const {data} = await getProperty()
+export default async function PropertyPage() {
+  const data = await getProperty()
   
   return (
     <section className="mb-4">
