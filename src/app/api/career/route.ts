@@ -1,5 +1,4 @@
 import nodemailer from 'nodemailer';
-import path from 'path';
 
 export async function POST(req: Request) {
   const data = await req.formData();
@@ -13,7 +12,6 @@ export async function POST(req: Request) {
     }
     const bytes = await file.arrayBuffer()
     const buffer = Buffer.from(bytes)
-    const ext = path.extname(file.name)
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -40,7 +38,7 @@ export async function POST(req: Request) {
       `,
       attachments: [
         {
-          filename: `attachment${ext}`,
+          filename: `${file.name}`,
           content: buffer
         },
       ]

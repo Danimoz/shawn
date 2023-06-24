@@ -7,7 +7,8 @@ import logo from "../../public/logo.jpg";
 
 const sections = [
   {sectionLink: '/', name: 'Home'},
-  {sectionLink: 'careers', name: 'Careers'}
+  {sectionLink: 'property', name: 'Properties'},
+  {sectionLink: 'careers', name: 'Careers'},
 ]
 
 export function Navbar (){
