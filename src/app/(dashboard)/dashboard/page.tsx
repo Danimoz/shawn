@@ -1,4 +1,4 @@
-import PropertyForm from "@/app/(dashboard)/dashboard/PropertyForm";
+import PropertyForm from "./PropertyForm";
 
 export default function Dashboard() {
   return (
