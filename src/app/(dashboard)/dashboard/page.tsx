@@ -1,9 +1,7 @@
-import PropertyForm from "./PropertyForm";
+import PropertyForm from "@/app/(dashboard)/dashboard/PropertyForm";
 
-export default async function Dashboard() {
+export default function Dashboard() {
   return (
-    <section>
-      <PropertyForm />
-    </section>
+    <PropertyForm />
   )
 }
