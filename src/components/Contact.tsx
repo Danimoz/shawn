@@ -118,7 +118,7 @@ export default function ContactForm() {
             {...register('message')} 
             placeholder="Message"
           />
-          {errors.phone?.message && (
+          {errors.message?.message && (
               <div>{errors.message?.message}</div>
             )}
         </div>
