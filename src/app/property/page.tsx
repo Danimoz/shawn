@@ -1,5 +1,4 @@
 import Property, { IProperty } from "@/models/Property";
-import getImageUrl from "@/utils/lib";
 import connectDB from "@/utils/mongoose";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +22,6 @@ export default async function PropertyPage() {
       <div className="px-8 md:flex gap-x-8 gap-y-8">
       {
         data.map(async (property:Partial<IProperty>, key:number) => {
-          const getImageSrc = property.images && property.images[0] ? await getImageUrl(property.images[0]) : '';
           return (
             <div key={key} className="max-w-sm rounded shadow-lg overflow-hidden">
               <Link href={`property/${property._id}`}>
@@ -31,7 +29,7 @@ export default async function PropertyPage() {
                   property.images && property.images[0] && (
                     <div>
                       <Image 
-                        src={getImageSrc}
+                        src={property.images[0]}
                         alt='Property Image'
                         width={500}
                         height={300}

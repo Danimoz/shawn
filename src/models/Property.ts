@@ -6,7 +6,7 @@ export interface IProperty extends Document {
   bedroom?: number;
   bathroom?: number;
   features?: string;
-  images?: Buffer[];
+  images?: string[];
   type?: string;
   size?: string;
   description?: string;
@@ -18,7 +18,7 @@ const propertySchema = new Schema<IProperty>({
   bedroom: Number,
   bathroom: Number,
   features: String,
-  images: [Buffer],
+  images: [String],
   type: String,
   size: String,
 

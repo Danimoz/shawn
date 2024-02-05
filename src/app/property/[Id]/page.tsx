@@ -1,5 +1,4 @@
 import Property from "@/models/Property";
-import getImageUrl from "@/utils/lib";
 import connectDB from "@/utils/mongoose";
 import Image from "next/image";
 
@@ -24,13 +23,12 @@ export default async function PropertyPage({ params }: PropertyPageProps){
       <div className="px-8 grid grid-cols-2 gap-4">
         <div className="overflow-y-scroll">
           {
-            property.images.map(async (image:Buffer, key:number) => {
-              const getImageSrc = await getImageUrl(image);
+            property.images.map(async (image:string, key:number) => {
               return (
                 <div key={key} className="w-full">
                   <Image 
                     alt='Property'
-                    src={getImageSrc}
+                    src={image}
                     width={750}
                     height={500}
                   />
