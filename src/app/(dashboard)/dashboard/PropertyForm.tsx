@@ -3,6 +3,7 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { propertySchema } from "@/utils/validations/property";
+import { useState } from "react";
 
 
 type PropertyInputs = {
@@ -18,6 +19,7 @@ type PropertyInputs = {
 }
 
 export default function PropertyForm(){
+  const [message, setMessage] = useState<string | null>(null);
   const { register, handleSubmit, reset, watch, formState: { errors, isSubmitting, isSubmitted } } = useForm<PropertyInputs>({
     defaultValues: {
       address: '',
@@ -52,6 +54,7 @@ export default function PropertyForm(){
         body: formData
       })
       const info = await response.json()
+      setMessage(info.message)
       reset()
     } catch(err){
       console.log(err)
@@ -62,8 +65,8 @@ export default function PropertyForm(){
     <section className="px-8 mt-6">
       <h2 className="text-center font-bold text-2xl">Add New Property</h2>
       {
-        isSubmitted ? (
-          <div className="flex justify-center items-center font-bold mb-4 text-3xl h-screen">Successful</div>
+        message ? (
+          <div className="flex justify-center items-center font-bold mb-4 text-3xl h-screen">{message}</div>
         ) : (
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="w-full mb-3">
