@@ -12,6 +12,8 @@ async function getProperty() {
   }
 }
 
+export const revalidate = 0;
+
 export default async function PropertyPage() {
   const data = await getProperty()
   
